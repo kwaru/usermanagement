@@ -1,0 +1,19 @@
+
+{% load static %}
+<!DCOTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>{% block title %}I like django website{% endblock %}</title>
+</head>
+<body style="background-color: grey;">
+	
+<img src="{% static "nyathi jimo.jpg" %}"  height="150" width="150" alt="my image">
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+  <footer><p>&copy; 2018 maurice omondi</footer>
+</body>
+</html>
